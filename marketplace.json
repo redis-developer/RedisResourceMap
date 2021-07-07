@@ -20,7 +20,7 @@
     "language": ["JavaScript", "Python"], 
     "redis_commands": ["FT.SEARCH", "PUBLISH", "SUBSCRIBE"], 
     "redis_features": ["Caching"],
-    "redis_modules": ["RedisGears", "RediSearch"], . 
+    "redis_modules": ["RedisGears", "RediSearch"], 
     "app_image_urls": [ 
       "https://raw.githubusercontent.com/redis-developer/RedisResourceMap/master/img/MainPage.jpg",
       "https://raw.githubusercontent.com/redis-developer/RedisResourceMap/master/img/RedisHackathonThumbnail.jpg"
