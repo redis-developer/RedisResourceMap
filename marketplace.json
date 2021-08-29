@@ -1,7 +1,7 @@
 {
     "app_name": "COVID-19 Resource Dashboard",  
     "description": "Crowdsourced live-updating resource map backed by RediSearch and RedisGears", 
-    "rank": "308",
+    "rank": 158,
     "type": "Full App", 
     "contributed_by": "Community", 
     "repo_url": "https://github.com/redis-developer/RedisResourceMap", 
