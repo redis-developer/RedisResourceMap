@@ -1,33 +1,33 @@
 {
-    "app_name": "COVID-19 Resource Dashboard",  
-    "description": "Crowdsourced live-updating resource map backed by RediSearch and RedisGears", 
+    "app_name": "COVID-19 Resource Dashboard",
+    "description": "Crowdsourced live-updating resource map backed by Redis Search and Triggers",
     "rank": 158,
-    "type": "Full App", 
-    "contributed_by": "Community", 
-    "repo_url": "https://github.com/redis-developer/RedisResourceMap", 
+    "type": "Full App",
+    "contributed_by": "Community",
+    "repo_url": "https://github.com/redis-developer/RedisResourceMap",
     "preview_image_url": "https://raw.githubusercontent.com/redis-developer/RedisResourceMap/master/images/app_preview_image.png",
     "download_url": "https://github.com/redis-developer/RedisResourceMap/archive/refs/heads/master.zip",
-    "hosted_url": "", 
+    "hosted_url": "",
     "quick_deploy": "false",
     "deploy_buttons": [
     {
       "heroku": "https://heroku.com/deploy?template=https://github.com/redis-developer/RedisResourceMap"
     },
-   
+
     {
       "Google": "https://deploy.cloud.run/?git_repo=https://github.com/redis-developer/RedisResourceMap"
     }
     ],
-    "language": ["JavaScript", "Python"], 
-    "redis_commands": ["FT.SEARCH", "PUBLISH", "SUBSCRIBE"], 
-    "redis_features": ["Caching"],
-    "redis_modules": ["RedisGears", "RediSearch"], 
-    "app_image_urls": [ 
+    "language": ["JavaScript", "Python"],
+    "redis_commands": ["FT.SEARCH", "PUBLISH", "SUBSCRIBE"],
+    "redis_use_cases": ["Caching"],
+    "redis_features": ["Triggers and Functions", "Search and Query"],
+    "app_image_urls": [
       "https://raw.githubusercontent.com/redis-developer/RedisResourceMap/master/img/MainPage.jpg",
       "https://raw.githubusercontent.com/redis-developer/RedisResourceMap/master/img/RedisHackathonThumbnail.jpg"
-    ], 
-    "youtube_url": "https://www.youtube.com/watch?v=QpvPByiWoXU", 
-    "special_tags": ["Hackathon"], 
-    "verticals": ["Healthcare"],  
+    ],
+    "youtube_url": "https://www.youtube.com/watch?v=QpvPByiWoXU",
+    "special_tags": ["Hackathon"],
+    "verticals": ["Healthcare"],
     "markdown": "https://raw.githubusercontent.com/redis-developer/RedisResourceMap/master/README.md"
 }
