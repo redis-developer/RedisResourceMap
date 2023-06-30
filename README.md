@@ -1,10 +1,10 @@
 # RedisResourceMap
 
-COVID-19 Resource Dashboard is a project leveraging the power of RediSearch, RedisGears, and Redis PubSub to create a live-updating, crowdsourced dashboard to connect places with excess supply of masks, oxygen, and vaccines to places lacking in such supplies. Users can add locations to indicate both excess supply and required resources, and the RedisGears matching engine will utilize the power of RediSearch geospatial querying to match up supplies with requirements.
+COVID-19 Resource Dashboard is a project leveraging the power of Redis Search, RedisGears, and Redis PubSub to create a live-updating, crowdsourced dashboard to connect places with excess supply of masks, oxygen, and vaccines to places lacking in such supplies. Users can add locations to indicate both excess supply and required resources, and the RedisGears matching engine will utilize the power ofRedis Searchgeospatial querying to match up supplies with requirements.
 
 ## How data is stored
 
-- Resource and location data are stored as documents in the RediSearch format. They contain the fields:
+- Resource and location data are stored as documents in theRedis Searchformat. They contain the fields:
   - masks (Numerical)
   - vaccines (Numerical)
   - oxygen (Numerical)
@@ -13,7 +13,7 @@ COVID-19 Resource Dashboard is a project leveraging the power of RediSearch, Red
 
 ## How data is processed
 
-- Data is inserted (as RediSearch documents) using the `HSET` command. Details on query construction are abstracted away with the `RediSearch` Python API, but the fields are as mentioned above
+- Data is inserted (asRedis Searchdocuments) using the `HSET` command. Details on query construction are abstracted away with the `Redis Search` Python API, but the fields are as mentioned above
 - Data is queried using `FT.SEARCH`:
     - Since this uses geospatial querying, heavy use of `GEORADIUS`/geospatial query syntax is used
     - Example query: `FT.SEARCH @coords[long lat radius km] FILTER masks 1 10000 INKEYS 1 -76,40`
